@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
+import ComponentA from './Components/CompnentA'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -38,6 +39,8 @@ function App() {
           </a>
         </p>
       </header>
+      {/* componentの描画とprops */}
+      <ComponentA name = "propsだぜ！"></ComponentA>
     </div>
   )
 }
