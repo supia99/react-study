@@ -1,7 +1,7 @@
 import './App.css'
 import About from './About';
 import Users from './Users';
-
+import Hook from './Hook';
 
 // 参照(routing nest): https://reactrouter.com/web/example/nesting
 
@@ -32,6 +32,9 @@ const App = () => {
             <li>
               <Link to='/users'>Users</Link>
             </li>
+            <li>
+              <Link to='/hook'>Hook</Link>
+            </li>
           </ul>
         </nav>
 
@@ -44,6 +47,9 @@ const App = () => {
           </Route>
           <Route path='/Users'>
             <Users />
+          </Route>
+          <Route path='/Hook'>
+            <Hook />
           </Route>
         </Switch>
       </div>
