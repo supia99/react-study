@@ -11,6 +11,7 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+import Calculator from './Calculator';
 
 const Home = () => {
   return (
@@ -35,6 +36,9 @@ const App = () => {
             <li>
               <Link to='/hook'>Hook</Link>
             </li>
+            <li>
+              <Link to='/boil'>Boil</Link>
+            </li>
           </ul>
         </nav>
 
@@ -50,6 +54,9 @@ const App = () => {
           </Route>
           <Route path='/Hook'>
             <Hook />
+          </Route>
+          <Route>
+            <Calculator />
           </Route>
         </Switch>
       </div>
